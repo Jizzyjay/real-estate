@@ -7,8 +7,8 @@ import { Auth0Provider } from "@auth0/auth0-react";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Auth0Provider
-      domain={process.env.REACT_AUTH_DOMAIN}
-      clientId={process.env.REACT_AUTH_CLIENT_ID}
+      domain={import.meta.env.REACT_AUTH_DOMAIN}
+      clientId={import.meta.env.REACT_AUTH_CLIENT_ID}
       authorizationParams={{
         redirect_uri: "https://real-estate-two-olive.vercel.app/",
       }}

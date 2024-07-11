@@ -21,7 +21,7 @@ const UploadImage = ({
     widgetRef.current = cloudinaryRef.current.createUploadWidget(
       {
         cloudName: "dpuumfztf",
-        uploadPreset: process.env.REACT_CLOUDINARY_UPLOADPRESET,
+        uploadPreset: import.meta.env.REACT_CLOUDINARY_UPLOADPRESET,
         maxFiles: 1,
       },
       (err, result) => {
