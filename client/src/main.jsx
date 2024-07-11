@@ -10,7 +10,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       domain={process.env.REACT_AUTH_DOMAIN}
       clientId={process.env.REACT_AUTH_CLIENT_ID}
       authorizationParams={{
-        redirect_uri: "https://real-estate-lake-alpha.vercel.app/",
+        redirect_uri: "https://real-estate-two-olive.vercel.app/",
       }}
       audience="http://localhost:8000"
       scope="openid profile email"
